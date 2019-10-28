@@ -71,17 +71,12 @@ Surefire plugin:
 ```
 Добавляем необходимые плагины и зависимости.
 ```
+
 - testng.xml 
 ```
 Добавляем testng.xml в корень проекта. 
 Intellij Idea -> Run/Debug Configuration -> TestNG -> Test kind: Suite, Suite: <path_to_testng.xml>
 Указываем порядок запуска определенных групп тестов.
-
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>6.14.3</version>
-        </dependency>
 ```
 
 - аннотации 
@@ -157,4 +152,47 @@ public static void methodName(){}
 выполнить команды: allure generate  //будет сгенерированы отчеты в формате веб-страниц;
 либо allure serve //произойдет запуск stadnalone сервера Allure, c последующим автоматическим вызовом 
 броузера, для отображения сгенерированных отчетов в формате веб-страниц; 
+```
+
+### Запуск тестов по группам ###
+- TestNG.xml 
+
+```
+1) В корневом каталоге проекта должен быть создать TestNG.xml,
+со следующим содержанием: 
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JIRA Suite" parallel="false">
+    <listeners>
+        <listener class-name="utils.TestListener"/>
+    </listeners>
+    <test name="Issue">
+        <groups>
+            <run>
+                <exclude name="Group1"/>
+                <include name="Group2"/>
+           </run>
+        </groups>
+        <classes>
+            <class name="JIRATest"/>
+        </classes>
+    </test>
+</suite>
+
+Соответственно группа указанная в тэге <include> будет выполнятся, а группа указанная в тэге <exclude> выполняться не будет. 
+```
+- настройка IDE 
+```
+2) Указываем путь к TestNG.xml, чтобы можно было запускать проект "через" сам xml-файл:
+Intellij Idea -> Run/Debug Configuration -> TestNG -> Test kind: Suite, Suite: <path_to_testng.xml>
+```
+
+- Использование аннотаций 
+```
+3) @Test(groups = {"Group1"}) / @Test(groups = {"Group1", "Group2"}) тест может одновременно принадлежать как к одной так и к нескольким группам. 
+Note: В случае, если тест одновременно принадлежит к двум группам, одна из которых добавлена в include, а другая указана в exclude - тест выполняться не будет.
+```
+- Запуск тестов 
+```
+Праквой кнопкой мышки на файле TestNG.xml, Run <path_to_file>/TestNG.xml
 ```

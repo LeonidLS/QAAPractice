@@ -8,17 +8,17 @@ import utils.WebDriverFactory;
 public class JIRATest extends BaseTest {
 
   @Feature("Login")
-  @Test(groups = {"Regression"})
+  @Test(groups = {"Smoke"})
   public void loginTest() {
     LoginPage loginPage = new LoginPage();
     loginPage.navigate();
     loginPage.loginToJira("webinar5", "webinar5");
     Assert.assertEquals(WebDriverFactory.getDriver().getCurrentUrl(), "https://jira.hillel.it/secure/Dashboard.jspa");
-    Assert.assertTrue(1 > 1);
+   // Assert.assertTrue(1 > 1);
   }
 
   @Feature("Issue")
-  @Test(groups = {"Regression", "SKIP"})
+  @Test(groups = {"Regression"})
   public void createIssue() throws InterruptedException {
     LoginPage loginPage = new LoginPage();
     loginPage.navigate();
@@ -30,15 +30,8 @@ public class JIRATest extends BaseTest {
     newIssuePage.enterProjectName("QAAUT-8");
     newIssuePage.enterIssueType("Test");
     newIssuePage.enterIssueSummary("Some Summary");
-    newIssuePage.enterIssueDescription("Some Desc");
+    newIssuePage.enterIssueDescription("Some Description");
     newIssuePage.clickCreateIssue();
 
   }
-
-  @Feature("Issue")
-  @Test(groups = {"Regression", "SKIP"})
-  public void testToBeSkipped() throws InterruptedException {
-
-  }
 }
-

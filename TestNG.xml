@@ -6,9 +6,9 @@
     <test name="Issue">
         <groups>
             <run>
+                <exclude name="Smoke"/>
                 <include name="Regression"/>
-                <exclude name="SKIP"/>
-            </run>
+           </run>
         </groups>
         <classes>
             <class name="JIRATest"/>
