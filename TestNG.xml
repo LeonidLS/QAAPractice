@@ -6,7 +6,7 @@
     <test name="Issue">
         <groups>
             <run>
-                <include name="Smoke"/>
+                <exclude name="Smoke"/>
                 <include name="Regression"/>
            </run>
         </groups>

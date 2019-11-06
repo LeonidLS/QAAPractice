@@ -15,6 +15,6 @@ public class BaseTest {
     public void tearDown() {
         // Close the driver
         WebDriverFactory.getDriver().quit();
-        new TestListener().captureScreenshot();
+//        new TestListener().captureScreenshot();
     }
 }
