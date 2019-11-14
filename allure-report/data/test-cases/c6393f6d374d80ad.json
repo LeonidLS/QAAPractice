@@ -1,0 +1,95 @@
+{
+  "uid" : "c6393f6d374d80ad",
+  "name" : "createIssue",
+  "fullName" : "JIRATest.createIssue",
+  "historyId" : "7cdfb5b38b6f5cd781c29b6eded94b1f",
+  "time" : {
+    "start" : 1572788644081,
+    "stop" : 1572788667151,
+    "duration" : 23070
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1572788631455,
+      "stop" : 1572788643949,
+      "duration" : 12494
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1572788668289,
+      "stop" : 1572788669011,
+      "duration" : 722
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "JIRATest"
+  }, {
+    "name" : "testClass",
+    "value" : "JIRATest"
+  }, {
+    "name" : "testMethod",
+    "value" : "createIssue"
+  }, {
+    "name" : "parentSuite",
+    "value" : "JIRA Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Issue"
+  }, {
+    "name" : "subSuite",
+    "value" : "JIRATest"
+  }, {
+    "name" : "host",
+    "value" : "LEON-COMP"
+  }, {
+    "name" : "thread",
+    "value" : "6952@LEON-COMP.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "feature",
+    "value" : "Issue"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c6393f6d374d80ad.json",
+  "parameterValues" : [ ]
+}

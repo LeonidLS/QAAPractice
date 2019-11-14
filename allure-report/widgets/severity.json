@@ -1,0 +1,31 @@
+[ {
+  "uid" : "4ff9f769eb2dae23",
+  "name" : "tearDown",
+  "time" : {
+    "start" : 1572789258484,
+    "stop" : 1572789258485,
+    "duration" : 1
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "4ce24bd8e86e770c",
+  "name" : "loginTest",
+  "time" : {
+    "start" : 1572789256578,
+    "stop" : 1572789257612,
+    "duration" : 1034
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "5e0f371531c3825b",
+  "name" : "createIssue",
+  "time" : {
+    "start" : 1572789225374,
+    "stop" : 1572789256128,
+    "duration" : 30754
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

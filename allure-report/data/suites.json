@@ -1,0 +1,56 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "JIRA Suite",
+    "children" : [ {
+      "name" : "Issue",
+      "children" : [ {
+        "name" : "JIRATest",
+        "children" : [ {
+          "name" : "createIssue",
+          "uid" : "5e0f371531c3825b",
+          "parentUid" : "30e7893670db2c24d866c0a93c780aca",
+          "status" : "passed",
+          "time" : {
+            "start" : 1572789225374,
+            "stop" : 1572789256128,
+            "duration" : 30754
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "loginTest",
+          "uid" : "4ce24bd8e86e770c",
+          "parentUid" : "30e7893670db2c24d866c0a93c780aca",
+          "status" : "broken",
+          "time" : {
+            "start" : 1572789256578,
+            "stop" : 1572789257612,
+            "duration" : 1034
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "tearDown",
+          "uid" : "4ff9f769eb2dae23",
+          "parentUid" : "30e7893670db2c24d866c0a93c780aca",
+          "status" : "broken",
+          "time" : {
+            "start" : 1572789258484,
+            "stop" : 1572789258485,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "30e7893670db2c24d866c0a93c780aca"
+      } ],
+      "uid" : "390518eefd4f71918170efb44d00aef4"
+    } ],
+    "uid" : "875d667e9f2f21cfcde575cf812bca46"
+  } ]
+}

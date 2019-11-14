@@ -1,0 +1,61 @@
+{
+  "6820923b4c879edcb89837d27fb0cbf4" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4ce24bd8e86e770c",
+      "status" : "broken",
+      "statusDetails" : "unexpected alert open: {Alert text : }\n  (Session info: chrome=77.0.3865.120): \nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'LEON-COMP', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_201'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\\Users\\LEON\\AppData\\Local...}, goog:chromeOptions: {debuggerAddress: localhost:65280}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 7d238107e1fae3ace718bd47e90c6dbb\n*** Element info: {Using=xpath, value=//input[@name='os_username']}",
+      "time" : {
+        "start" : 1572789256578,
+        "stop" : 1572789257612,
+        "duration" : 1034
+      }
+    } ]
+  },
+  "efe4e3df8a7b848607b8c7b2e1ba82e6" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4ff9f769eb2dae23",
+      "status" : "broken",
+      "statusDetails" : "Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'LEON-COMP', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_201'\nDriver info: driver.version: RemoteWebDriver",
+      "time" : {
+        "start" : 1572789258484,
+        "stop" : 1572789258485,
+        "duration" : 1
+      }
+    } ]
+  },
+  "7cdfb5b38b6f5cd781c29b6eded94b1f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5e0f371531c3825b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572789225374,
+        "stop" : 1572789256128,
+        "duration" : 30754
+      }
+    } ]
+  }
+}

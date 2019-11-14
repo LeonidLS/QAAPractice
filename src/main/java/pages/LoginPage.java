@@ -1,6 +1,7 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import utils.WebDriverFactory;
 
@@ -15,6 +16,9 @@ public class LoginPage {
   private By passwordInput = By.xpath("//input[@name='os_password']");
   private By loginButton = By.xpath("//input[@name='login']");
   private By wrongPasswordLabel = By.xpath("//div[@class='aui-message aui-message-error']");
+//  final static String wrongCrdentialsMsg="Sorry, your username and password are incorrect - please try again.";
+
+  //private By errorMsg = By.xpath("//div[@id='usernameerror']");
 
   public LoginPage() {
     this.driver = WebDriverFactory.getDriver();
@@ -34,6 +38,18 @@ public class LoginPage {
 
   public void clickLogin() {
     driver.findElement(loginButton).click();
+  }
+
+  public boolean isErrorMessagePresent(String msg){
+    try {
+      By errorMsg = By.xpath("//div[@id='usernameerror']");
+      System.out.println(msg);
+      System.out.println(driver.findElement(errorMsg).getText());
+      return msg.equals(driver.findElement(errorMsg).getText());
+    } catch (NoSuchElementException e){
+      System.out.println("Login successfull, error message wasn't found");
+      return  false;
+    }
   }
 
   public void loginToJira(String name, String password) {

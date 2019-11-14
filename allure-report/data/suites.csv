@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"broken","Sun Nov 03 15:54:18 EET 2019","Sun Nov 03 15:54:18 EET 2019","1","JIRA Suite","Issue","JIRATest","JIRATest","tearDown","tearDown",""
+"passed","Sun Nov 03 15:53:45 EET 2019","Sun Nov 03 15:54:16 EET 2019","30754","JIRA Suite","Issue","JIRATest","JIRATest","createIssue","createIssue",""
+"broken","Sun Nov 03 15:54:16 EET 2019","Sun Nov 03 15:54:17 EET 2019","1034","JIRA Suite","Issue","JIRATest","JIRATest","loginTest","loginTest",""
